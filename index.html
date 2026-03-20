@@ -220,12 +220,12 @@ body {
 .wv { font-size:28px; font-weight:300; color:white; }
 .ws { font-size:13px; color:rgba(255,255,255,.45); margin-top:3px; }
 
-/* ── Later panel — slides in from LEFT ── */
+/* ── Later panel — slides in from RIGHT ── */
 .later-panel {
   position:absolute; inset:0; z-index:30;
   display:flex; flex-direction:column;
   background:var(--dark);
-  transform:translateX(-100%);
+  transform:translateX(100%);
   transition:transform .35s cubic-bezier(.4,0,.2,1);
 }
 .later-panel.open { transform:translateX(0); }
